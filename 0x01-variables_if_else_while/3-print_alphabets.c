@@ -2,7 +2,7 @@
 /**
  * main - Uppercase and lowercase password
  *
- * Return - Always equal to 0 (Success)
+ * Return: Always equal to 0 (Success)
  */
 int main(void)
 {

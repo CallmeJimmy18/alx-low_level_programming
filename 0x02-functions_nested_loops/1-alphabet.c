@@ -1,12 +1,13 @@
 #include "main.h"
-/**
- * main - check the code
- *
- * Return: Always 0.
+/**                                                                                                                                                                   
+ * print_alphabet - for loop                                                                                                                                          
  */
-int main(void)
+void print_alphabet(void)
 {
-print_alphabet();
-_putchar('\n');
-return (0);
+int i;
+char alph[26] = "abcdefghijklmnopqrstuvwxyz";
+for (i = 0; i < 26; i++)
+{
+_putchar(alph[i]);
+}
 }

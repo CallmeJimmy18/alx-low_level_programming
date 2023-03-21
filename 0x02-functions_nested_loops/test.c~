@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int lower(int c)
+{
+  char ula[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    int i;
+  for (i = 0; i < 52; i++)
+    {
+      if (c == ula[i])
+	{
+	  return (1);
+	}else {
+	return (0);
+	  }
+    }
+}
+
+
+int main(void)
+{
+  int r;
+  r = lower('h');
+  putchar(r + '0');
+r = lower('o');
+    putchar(r + '0');
+  r = lower(108);
+    putchar(r + '0');
+     r = lower(';');
+    putchar(r + '0');
+    putchar('\n');
+  return (0);
+}

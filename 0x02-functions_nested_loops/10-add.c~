@@ -1,0 +1,11 @@
+#include "main.h"
+/**
+ * add - adss two integers together
+ * @n1 and @n2: are the numbers being added together
+ * Return: this returns the result
+ */
+int add(int n1, int n2)
+{
+int result = n1 + n2;
+return (result);
+}

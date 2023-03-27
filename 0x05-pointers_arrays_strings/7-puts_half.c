@@ -19,7 +19,7 @@ if (j == i / 2)
 {
 if (j % 2 != 0)
 {
-_putchar(str[(j / 2) -1]);
+_putchar(str[(j / 2) - 1]);
 }
 else
 {

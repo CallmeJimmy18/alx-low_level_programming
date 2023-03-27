@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  * print_array - prints elements in array
+ * @a: this is the array
  * @n: elements to be printed
  */
 void print_array(int *a, int n)

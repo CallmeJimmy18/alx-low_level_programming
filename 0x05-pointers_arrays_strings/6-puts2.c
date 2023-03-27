@@ -22,4 +22,3 @@ _putchar(str[j]);
 }
 _putchar('\n');
 }
-	 

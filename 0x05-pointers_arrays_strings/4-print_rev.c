@@ -13,7 +13,7 @@ j++;
 s++;
 }
 s--;
-for (i = j; i >= 0; i--)
+for (i = j; i > 0; i--)
 {
 _putchar(*s);
 s--;

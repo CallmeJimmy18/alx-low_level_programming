@@ -3,6 +3,7 @@
  * _strncpy - Copies n charcters of string
  * @dest: string copied into this
  * @src: string copied into dest
+ * @n: number of characters to be copied
  * Return: returns dest
  */
 char *_strncpy(char *dest, char *src, int n)

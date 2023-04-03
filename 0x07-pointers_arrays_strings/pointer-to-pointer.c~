@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(){
+    
+    int num;
+    int *ptr1;
+    int **ptr2;
+
+    num = 700;
+    ptr1 = &num;
+    ptr2 = &ptr1;
+
+    //access value of num
+    printf("The value of num is %d\n", num);
+    printf("The value of num using ptr1 is %d\n", *ptr1);
+    printf("The value of num using ptr2 is %d\n", **ptr2);
+
+    //access the address of num
+    printf("The address of num is %p\n", &num);
+      
+    return (0);
+}

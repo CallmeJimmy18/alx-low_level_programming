@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _memcpy - copies the string to dest
- * @deest: this is the destination
+ * @dest: this is the destination
  * @src: this is the source
  * @n: this is the number of bytes
  * Return: this will return the dest string

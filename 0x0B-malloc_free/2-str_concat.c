@@ -38,7 +38,7 @@ while (s1[i] != '\0')
 join[i] = s1[i];
 i++;
 }
-while (s2[j] != '\0');
+while (s2[j] != '\0')
 {
 join[i] = s2[j];
 i++, j++;

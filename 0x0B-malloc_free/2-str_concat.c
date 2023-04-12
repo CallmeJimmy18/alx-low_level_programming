@@ -18,7 +18,7 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-i, j = 0;
+i = j = 0;
 while (s1[i] != '\0')
 {
 i++;
@@ -32,7 +32,7 @@ if (join == NULL)
 {
 return (NULL);
 }
-i, j = 0;
+i = j = 0;
 while (s1[i] != '\0')
 {
 join[i] = s1[i];

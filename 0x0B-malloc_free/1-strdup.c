@@ -19,7 +19,11 @@ while (str[r] != '\0')
 {
 r++;
 }
- ptr = malloc(sizeof(char) * (r + 1));
+ptr = malloc(sizeof(char) * (r + 1));
+if (ptr == NULL)
+{
+return (NULL);
+}
 for (i = 0; i < r; i++)
 {
 ptr[i] = str[i];

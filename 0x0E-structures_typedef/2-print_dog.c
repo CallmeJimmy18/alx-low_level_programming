@@ -13,13 +13,11 @@ return;
 }
 if (d->name == NULL)
 {
-printf("nil");
+d->name = "(nil)";
 }
 if (d->owner == NULL)
 {
-printf("nil");
+d->owner = "(nil)";
 }
-printf("Name: %s\n", d->name);
-printf("Age: %lf\n", d->age);
-printf("Owner: %s\n", d->owner);
+printf("Name: %s\nAge: %f\nOwner: %s\n", d->name, d->age, d->owner);
 }

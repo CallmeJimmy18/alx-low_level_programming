@@ -19,6 +19,11 @@ return (NULL);
 }
 nw->n = n;
 nw->next = NULL;
+if (*head == NULL)
+{
+*head = nw;
+return (nw);
+}
 while (tmp->next != NULL)
 {
 tmp = tmp->next;

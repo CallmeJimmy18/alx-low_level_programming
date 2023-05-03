@@ -25,14 +25,17 @@ if (idx == 0)
 nw->next = *head;
 *head = nw;
 return (nw);
-} 
-idx--;
-while (idx != 1)
-{
-tmp = tmp->next;
-idx--;
 }
+for (i = 0; tmp && i < idx; i++)
+{
+if (i == idx - 1)
+{
 nw->next = tmp->next;
 tmp->next = nw;
 return (nw);
+}
+else
+tmp = tmp->next;
+}
+return (NULL);
 }

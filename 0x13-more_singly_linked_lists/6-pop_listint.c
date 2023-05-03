@@ -17,7 +17,7 @@ return (0);
 else
 {
 num = (*head)->n;
-*tmp = (*head)->next;
+tmp = (*head)->next;
 free(*head);
 *head = tmp;
 }

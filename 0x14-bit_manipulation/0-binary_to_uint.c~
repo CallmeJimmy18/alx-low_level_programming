@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+/**
+ * binary_to_uint - converts a binary to decimal
+ * @b: this is the number being converted
+ * Return: the converted number
+ */
+unsigned int binary_to_uint(const char *b)
+{
+  int i;
+  int dec = 0;
+  int remain;
+  int base = 1;
+
+  while (!b)
+    {
+      remain = b % 10;
+      dec = dec + remain * base;
+      b = b / 10;
+      base = base * 2;
+    }
+  return (dec);
+}

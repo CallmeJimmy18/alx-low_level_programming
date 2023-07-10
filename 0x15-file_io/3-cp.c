@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
 
 	buff = make_buf(argv[2]);
 	frm = open(argv[1], O_RDONLY);
-	re = read(from, buff, 1024);
+	re = read(frm, buff, 1024);
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
@@ -91,7 +91,7 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 
-		re = read(from, buff, 1024);
+		re = read(frm, buff, 1024);
 		to = open(argv[2], O_WRONLY | O_APPEND);
 
 	} while (re > 0);

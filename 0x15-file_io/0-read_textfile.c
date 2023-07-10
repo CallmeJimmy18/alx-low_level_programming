@@ -3,6 +3,8 @@
 #include <sys/types.h>
 #include <unistd.h>
 #include "main.h"
+#include <sys/stat.h>
+#include <fcntl.h>
 /**
   * read_textfile -  reads a text file and prints it
  * @letters: the number of letters it should read and print

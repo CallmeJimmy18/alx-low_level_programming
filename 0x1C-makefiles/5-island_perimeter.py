@@ -13,9 +13,9 @@ def island_perimeter(grid):
         for j in range(wdth):
             if grid[i][j] == 1:
                 size += 1
-                if (j > 0 and grid[i][j+1] == 0):
+                if (j > 0 and grid[i][j + 1] == 1):
                     edg += 1
-                if (i > 0 and grid[i-1][j] == 0):
+                if (i > 0 and grid[i - 1][j] == 1):
                     edg += 1
 
-    return size + (edg + 1)
+    return size * 4 - edg * 2
